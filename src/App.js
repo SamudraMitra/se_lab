@@ -4,6 +4,8 @@ import Login from "./components/Login";
 import Cashier from "./components/Cashier";
 import Employee from "./components/Employee";
 import Manager from "./components/Manager";
+import AddItem from "./components/AddItem";
+import Forbidden from "./components/Forbidden";
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +14,8 @@ function App() {
         <Route path="/cashier" element={<Cashier />} />
         <Route path="/employee" element={<Employee />} />
         <Route path="/manager" element={<Manager />} />
+        <Route path="/additem" element={<AddItem />} />
+        <Route path="/forbidden" element={<Forbidden />} />
       </Routes>
     </BrowserRouter>
   );
